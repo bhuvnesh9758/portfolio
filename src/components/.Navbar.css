@@ -1,0 +1,36 @@
+/* navbar styles --------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+  position: sticky;
+}
+.navbar-item > ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  align-items: center;
+}
+.navbar-item > ul > li a,
+.navbar h2 a {
+  text-decoration: none;
+  color: var(--slate);
+}
+.navbar-item > ul > li a:hover,
+.navbar h2 a:hover {
+  color: var(--green);
+  opacity: 0.8;
+}
+.navbar-item > ul > li:last-child {
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  padding: 8px;
+}
+.navbar-item > ul > li:last-child > a {
+  color: var(--green);
+}
+.navbar-item > ul > li:last-child:hover {
+  background-color: var(--green-tint);
+}
